@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 function Product({ img, title = "" }) {
   return (
@@ -11,7 +12,9 @@ function Product({ img, title = "" }) {
         margin: "5rem 0",
       }}
     >
-      <img
+      <Image
+      width={200}
+      height={200}
         className="w-full h-auto z-10 cursor-pointer"
         src={img.src}
         alt={title}

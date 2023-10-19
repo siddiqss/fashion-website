@@ -28,7 +28,7 @@ function NewArrival() {
           trigger: horizontalRef.current,
           start: "top top",
           end: "bottom top",
-          scrub: 0.6,
+          scrub: 1,
           pin: true,
         },
       }

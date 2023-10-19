@@ -2,6 +2,9 @@ import { Kaushan_Script } from "next/font/google";
 import Title from "./Title";
 
 import localFont from "next/font/local";
+import dynamic from "next/dynamic";
+
+const VideoComp = dynamic(() => import("components/VideoComp"), {ssr:false});
 
 export const europaGrotesk = localFont({
   src: '../public/fonts/EuropaGroteskSH-Reg.otf',
@@ -26,15 +29,7 @@ function CoverVideo() {
         {/* <Subtitle /> */}
       </div>
 
-      <video
-        src="/girl on the table.mp4"
-        type="video/mp4"
-        autoPlay
-        loop
-        muted
-        className="w-full h-screen object-cover sm:object-[center] "
-        id="coverVideo"
-      />
+      <VideoComp />
     </section>
   );
 }

@@ -35,7 +35,7 @@ function Shop() {
           trigger: horizontalRef.current,
           start: "top top",
           end: "2000 top",
-          scrub: 0.6,
+          scrub: 1,
           pin: true,
         },
       }
